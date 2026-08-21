@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,10 @@
         <header>
             <h1>🤖 Jarvis GitHub Control</h1>
             <p class="subtitle">Full repository control via GitHub API</p>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-icon" id="theme-icon">☀️</span>
+                <span class="theme-text" id="theme-text">Light</span>
+            </button>
         </header>
         
         <main>
@@ -30,7 +34,7 @@
                         <span class="label">Private Repos</span>
                         <span class="value" id="private-count">3</span>
                     </div>
-                    < <div class="info-item">
+                    <div class="info-item">
                         <span class="label">Deployed</span>
                         <span class="value" id="deploy-time">Just now</span>
                     </div>

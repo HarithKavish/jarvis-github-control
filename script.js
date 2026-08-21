@@ -5,6 +5,30 @@
 const GITHUB_API = 'https://api.github.com';
 const USERNAME = 'HarithKavish';
 
+// Theme management
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeToggle(savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeToggle(newTheme);
+}
+
+function updateThemeToggle(theme) {
+    const icon = document.getElementById('theme-icon');
+    const text = document.getElementById('theme-text');
+    if (icon && text) {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        text.textContent = theme === 'dark' ? 'Light' : 'Dark';
+    }
+}
+
 async function fetchGitHub(endpoint) {
     const response = await fetch(`${GITHUB_API}${endpoint}`);
     if (!response.ok) {
@@ -86,9 +110,11 @@ async function listRepos() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
     document.getElementById('deploy-time').textContent = new Date().toLocaleString();
     loadActivity();
     
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
     document.getElementById('test-btn').addEventListener('click', testConnection);
     document.getElementById('list-repos-btn').addEventListener('click', listRepos);
 });
