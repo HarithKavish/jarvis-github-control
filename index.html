@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis GitHub Control Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Jarvis GitHub Control</h1>
+            <p class="subtitle">Full repository control via GitHub API</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Status: <span id="status" class="status-active">CONNECTED</span></h2>
+                <p>This page is served via GitHub Pages, deployed automatically by Jarvis.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Account</span>
+                        <span class="value" id="account">HarithKavish</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Repos Accessible</span>
+                        <span class="value" id="repo-count">30+</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Private Repos</span>
+                        <span class="value" id="private-count">3</span>
+                    </div>
+                    < <div class="info-item">
+                        <span class="label">Deployed</span>
+                        <span class="value" id="deploy-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Capabilities</h2>
+                <ul class="capabilities">
+                    <li>✅ List all repositories (public & private)</li>
+                    <li>✅ Create / delete repositories</li>
+                    <li>✅ Read / write files in any repo</li>
+                    <li>✅ Create / manage issues & pull requests</li>
+                    <li>✅ Manage GitHub Actions workflows</li>
+                    <li>✅ Configure GitHub Pages</li>
+                    <li>✅ Manage branches, tags, releases</li>
+                    <li>✅ Repository settings & secrets</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Recent Activity</h2>
+                <div id="activity">Loading...</div>
+            </div>
+
+            <div class="card">
+                <h2>Test Control Panel</h2>
+                <button id="test-btn" class="btn">Test API Connection</button>
+                <button id="list-repos-btn" class="btn btn-secondary">List My Repos</button>
+                <pre id="output" class="output"></pre>
+            </div>
+        </main>
+
+        <footer>
+            <p>Deployed by Jarvis via GitHub API • <a href="https://github.com/HarithKavish" target="_blank">@HarithKavish</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
