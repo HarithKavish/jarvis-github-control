@@ -5,14 +5,14 @@
 }
 
 :root {
-    /* Dark theme (default) */
+    /* Dark theme (default) - Green theme */
     --bg: #0d1117;
     --bg-secondary: #161b22;
     --bg-tertiary: #21262d;
     --fg: #e6edf3;
     --fg-muted: #8b949e;
-    --accent: #58a6ff;
-    --accent-hover: #79b8ff;
+    --accent: #3fb950;
+    --accent-hover: #5bc56a;
     --success: #3fb950;
     --border: #30363d;
     --card-bg: #161b22;
@@ -32,8 +32,8 @@
     --bg-tertiary: #eaeef2;
     --fg: #24292f;
     --fg-muted: #656d76;
-    --accent: #0969da;
-    --accent-hover: #0860ca;
+    --accent: #1a7f37;
+    --accent-hover: #2da44e;
     --success: #1a7f37;
     --border: #d0d7de;
     --card-bg: #ffffff;
