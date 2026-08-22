@@ -25,24 +25,24 @@
     --input-bg: #0d1117;
 }
 
-/* Light theme */
+/* Light theme - Green shaded */
 [data-theme="light"] {
-    --bg: #ffffff;
-    --bg-secondary: #f6f8fa;
-    --bg-tertiary: #eaeef2;
-    --fg: #24292f;
-    --fg-muted: #656d76;
+    --bg: #e8f5e9;
+    --bg-secondary: #c8e6c9;
+    --bg-tertiary: #a5d6a7;
+    --fg: #1b5e20;
+    --fg-muted: #2e7d32;
     --accent: #1a7f37;
     --accent-hover: #2da44e;
     --success: #1a7f37;
-    --border: #d0d7de;
+    --border: #81c784;
     --card-bg: #ffffff;
-    --shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-    --header-bg: linear-gradient(135deg, #ffffff 0%, #f6f8fa 100%);
-    --theme-toggle-bg: #f3f4f6;
-    --theme-toggle-hover: #e5e7eb;
-    --theme-toggle-border: #d0d7de;
-    --output-bg: #f6f8fa;
+    --shadow: 0 4px 24px rgba(46, 125, 50, 0.15);
+    --header-bg: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    --theme-toggle-bg: #c8e6c9;
+    --theme-toggle-hover: #a5d6a7;
+    --theme-toggle-border: #81c784;
+    --output-bg: #f1f8e9;
     --input-bg: #ffffff;
 }
 
